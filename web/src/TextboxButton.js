@@ -26,13 +26,16 @@ class TextboxButton extends Component {
   render() {
     return (
       <div style={this.props.style} className="wrapper">
-        <input
-          type="text"
-          value={this.state.value}
-          onChange={this.handleChange}
-          onKeyPress={this.handleKeyPress}
-          placeholder={this.props.placeholder}
-        />
+        <span>
+          <label>{this.props.prefix}</label>
+          <input
+            type="text"
+            value={this.state.value}
+            onChange={this.handleChange}
+            onKeyPress={this.handleKeyPress}
+            placeholder={this.props.placeholder}
+          />
+        </span>
         <button onClick={this.handleSumbit}>Load</button>
       </div>
     );

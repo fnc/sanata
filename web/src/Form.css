@@ -26,7 +26,17 @@
 	border: 0;
 	background-color: transparent;
 	height: 85%;
-	padding: 2px 2px 2px 12px;
+	padding: 2px 2px 2px 0px;
+	outline: none;
+}
+
+.form label {
+	flex: 1;
+	border: 0;
+	font: 13.3333px Arial;
+	background-color: transparent;
+	height: 85%;
+	padding: 2px 0px 2px 12px;
 	outline: none;
 }
 
