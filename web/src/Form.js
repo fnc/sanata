@@ -27,7 +27,12 @@ class Form extends Component {
     return (
       <div className="form" style={this.formStyle}>
         <Spinner style={this.spinnerStyle} />
-        <TextboxButton onSubmit={this.props.onChange} style={this.inputStyle} prefix="@" placeholder="username" />
+        <TextboxButton
+          onSubmit={this.props.onChange}
+          style={this.inputStyle}
+          prefix="@"
+          placeholder="username"
+        />
       </div>
     );
   }
